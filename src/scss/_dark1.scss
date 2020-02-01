@@ -1,0 +1,140 @@
+body {
+  font-family: "Kanit", sans-serif !important;
+  color: #fff;
+}
+
+.flex-login {
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+.app-header {
+  background-color: #424242;
+  // border-bottom: 1px solid #000;
+  margin-top: -95px;
+  z-index: 100;
+  box-shadow: -2px 4px 4px 0px #000000;
+}
+a {
+  color: #fff;
+}
+a  {
+  color: #fff;
+}
+.fa {
+  font-size: 20px !important;
+  color: #fff;
+}
+
+.sidebar-list {
+  background-color: #535353 !important;
+  color: #fff !important;
+  border-bottom: 1px solid #fff;
+}
+.sidebar-manu {
+  background-color: #424242 !important;
+}
+.app {
+  z-index: -100;
+}
+.navbar-nav .dropdown-menu {
+  background-color: #535353 !important;
+}
+.dropdown-item {
+  color: #fff;
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  // z-index: -95;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  background-color: #535353;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+  padding-top: 20px;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.card-footer {
+  text-align: right;
+}
+
+/* edit */
+.scrollbar-container {
+  overflow-anchor: none;
+  touch-action: pan-up;
+  position: absolute;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 240px !important;
+  padding-bottom: 180px;
+  background-color: #535353 !important;
+}
+#wrapper {
+  margin-top: 95px !important;
+  flex-direction: row;
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+}
+/* edit */
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+    margin-top: 15px;
+    position: fixed;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    margin-top: 19px;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+    will-change: transform;
+    top: 0px;
+    left: 0px;
+    transform: translate3d(-40px, 40px, 0px);
+  }
+
+  @media (min-width: 992px) {
+    .sidebar-fixed .app-header + .app-body .sidebar {
+      height: calc(100vh - 55px);
+    }
+
+    #page-content-wrapper {
+      margin-left: 240px;
+    }
+  }
+}
